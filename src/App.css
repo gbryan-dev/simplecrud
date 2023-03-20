@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+.list { margin: 20px; padding: 20px; background-color: white; color: #111111; list-style: none;}

@@ -1,0 +1,315 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+ * { font-family: 'Poppins'; box-sizing: border-box;}
+
+ body { background-color: #0F172A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+  
+.container { margin: 50px; height: auto; width: auto; max-width: 1300px; 
+  display: flex; flex-wrap: wrap; transition: 2s;
+}
+
+  .form {
+    margin: 0px;
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 10px aqua;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: 'Poppins';
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
+
+  .accounts {  margin: auto; margin-left: 30px; width: 700px; max-height: 700px; background-color: #1E293B; position: relative; overflow: hidden; border-radius: 15px; }
+
+  .accountsflex { margin: auto; width: 100%; height: 600px; 
+    padding-bottom: 90px; padding-top: 0px; overflow-y: auto;
+   display: flex; flex-wrap: wrap; 
+  
+  }
+  
+
+  .accountsflexbefore { content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 75px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px -191px 126px 18px rgba(21,23,43,0.75) inset;
+    -webkit-box-shadow: 0px -191px 126px 18px rgba(21,23,43,0.75) inset;
+    -moz-box-shadow: 0px -191px 126px 18px rgba(21,23,43,0.75) inset;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+
+  .accountainer { margin: 15px auto; 
+    height: 310px;
+    width: 320px; background-color: white;
+    border-radius: 10px; overflow: hidden;
+    box-shadow: 0px 0px 5px white;
+    text-align: center;
+    position: relative;
+  }
+
+  .accountainer:hover .cover { height: 40%;}
+  .accountainer:hover .accbtn { opacity: 1;}
+
+
+  .cover { margin: 0px; height: 60%; width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;}
+
+  .profile { margin: -37px auto; height: 75px; width: 75px; 
+    outline: 3px solid white; margin-bottom: 10px;
+    border-radius: 100%; background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+    
+
+  .name { color: #0F172A; font-size: 23px; font-weight: 800; font-family: 'Poppins';
+    text-transform: uppercase; white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-left: 20px; padding-right: 20px;
+  }
+
+
+  .accbtn { margin: 10px; display: flex; justify-content: center; align-items: center; align-content: center;
+   opacity: 0; transition: .5s;
+  }
+
+
+  .accFront { position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -66;
+    background-color: #15172B;
+    border: 2px solid #15172B;
+    border-radius: 10px;
+    opacity: 0;
+    padding: 15px;
+    padding-top: 5px;
+    transition: .5s;
+  }
+
+  .accFront.show {
+    opacity: 1;
+    z-index: 66;
+  }
+
+
+  .accountsflex::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
+  }
+  
+  .accountsflex::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the color of the track */
+  }
+  
+  .accountsflex::-webkit-scrollbar-thumb {
+    background: #888; /* Set the color of the thumb */
+    border-radius: 8px; /* Set the border radius of the thumb */
+  }
+  
+  .accountsflex::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set the color of the thumb on hover */
+  }
+
+  
+  .copyright {
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center; text-align: center; }
+
+  .footer_copyright {
+    margin: auto;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+
+  .footer_copyright div { 
+    margin: auto;
+    display: flex; justify-content: center;
+    align-items: center; text-align: center;
+
+  }
+
+  .sol-icon { -webkit-animation: beat .25s infinite alternate;
+    -moz-animation: beat .25s infinite alternate;
+    -ms-animation: beat .25s infinite alternate;
+    -o-animation: beat .25s infinite alternate;
+    animation: beat .25s infinite alternate;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;}
+  
+  @keyframes beat{
+    to {
+       -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+   
+   }
+   
+   @-moz-keyframes beat {
+    to {
+      -moz-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+   
+   }
+   
+   @-webkit-keyframes beat{
+    to {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+   
+   }
+   
+   @-ms-keyframes beat {
+    to {
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+   
+   }
+   
+   @-o-keyframes beat {
+    to {
+      -o-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+   
+   } 
