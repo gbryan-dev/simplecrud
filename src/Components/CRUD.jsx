@@ -46,7 +46,7 @@ const CRUD = () => {
       <div className="container">
         <form className="form" autoComplete="off" onSubmit={handleSubmit}>
           <div className="title">Welcome</div>
-          <div className="subtitle">Welcome to my simple CRUD!</div>
+          <div className="subtitle">Welcome to my simple CRUD !</div>
           <div className="input-container ic1">
             <input
               id="firstname"
