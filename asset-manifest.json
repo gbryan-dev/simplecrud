@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/simplecrud/static/css/main.cc20a9b3.css",
+    "main.js": "/simplecrud/static/js/main.cc7c101c.js",
+    "static/js/787.562d687e.chunk.js": "/simplecrud/static/js/787.562d687e.chunk.js",
+    "static/media/2.jpg": "/simplecrud/static/media/2.65f426f385b3f82a643e.jpg",
+    "static/media/3.jpg": "/simplecrud/static/media/3.40d165d80b3a3b370a74.jpg",
+    "static/media/1.jpg": "/simplecrud/static/media/1.d9302fdfe11bfee4c79b.jpg",
+    "static/media/4.jpg": "/simplecrud/static/media/4.0d88d64b551413daf6b2.jpg",
+    "static/media/react.svg": "/simplecrud/static/media/react.127e0b6ef3fd35aa1a4d84a61d265198.svg",
+    "index.html": "/simplecrud/index.html",
+    "main.cc20a9b3.css.map": "/simplecrud/static/css/main.cc20a9b3.css.map",
+    "main.cc7c101c.js.map": "/simplecrud/static/js/main.cc7c101c.js.map",
+    "787.562d687e.chunk.js.map": "/simplecrud/static/js/787.562d687e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc20a9b3.css",
+    "static/js/main.cc7c101c.js"
+  ]
+}
